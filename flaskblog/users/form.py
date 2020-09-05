@@ -9,7 +9,7 @@ from flaskblog.model import User
 class RegistrationForm(FlaskForm):
     # for username field in registration form with validations
     username = StringField('Username',
-                           validators=[DataRequired(), Length(min=2, max=20)])
+                           validators=[DataRequired(), Length(min=4, max=20)])
     email = StringField('Email',
                         validators=[DataRequired(), Email()])
     password = PasswordField('Password',

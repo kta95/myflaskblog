@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div class="content-section">
+      <div class="media">
+        <img class="rounded-circle account-img img-fluid mx-auto d-block" src="{{ image_file }}">
+      </div>
+      <fieldset class="form-group">
+          <legend class="border-bottom mb-4 text-center">Account Info</legend>
+            <div class="text-center">
+              <h2 class="account-heading">{{ current_user.username }}</h2>
+              <p class="text-secondary">{{ current_user.email }}</p>
+            </div>
+      </fieldset>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<hr>
+{% endblock %}
